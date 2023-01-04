@@ -14,23 +14,19 @@
   }
 </style>
 <body>
-<input type="text" id="tect">
-<input type="text" id='face'>
-<div id="wat"></div>
+<input type="text" id="in1">
+<input type="text" id="in2">
+<div id="out"></div>
 <button id="btn">click me</button>
 </body>
   <script>
+  
   const btn = document.getElementById('btn');
    btn.addEventListener('click', () => {
-     const output = document.getElementById('wat');
-     const iput = document.getElementById('face').value;
-     const inputy = document.getElementById('tect').value;
-  //   const run = iput.length>inputy.lenght;
-     console.log(iput.length > inputy.lenght)
- //    const result = run ? true : false;
-//console.log(result)
-     output.innerHTML = iput.length;
+     const output = document.getElementById('out');
+     const in1 = document.getElementById('in1').value;
+     const in2 = document.getElementById('in2').value;
+     console.log(+in1.length > +in2.length);
    }) 
-    
-  </script>
+    </script>
 </html>
